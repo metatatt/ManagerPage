@@ -1,0 +1,154 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* set a fixed height for the container */
+}
+
+/* Header */
+
+header {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  position: absolute;
+  left: 25%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0052cc;
+}
+
+.active-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.inactive-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hero section */
+
+.hero {
+  position: relative;
+  /* other styles */
+  background-image: url(lineCAM_J_QAD_login.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-subtext {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
+.hero-text {
+  font-size: 2.5rem;
+  height: 100%; 
+  color: hsla(355, 66%, 55%, 0.932);
+  margin-top: 30px;
+  position: absolute;
+  left: 35%;
+}
+
+.flicker {
+  animation: flicker-effect 0.5s linear infinite alternate;
+}
+
+@keyframes flicker-effect {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
